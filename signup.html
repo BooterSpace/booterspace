@@ -9,17 +9,21 @@
 <body>
   <main class="auth-wrap">
     <section class="card auth-card">
-      <h1>Create your account</h1>
+      <a class="brand" href="login.html">BooterSpace</a>
+      <h1 class="mt16">Create your account</h1>
       <p class="muted mt8">Build your career community.</p>
       <form id="signup-form" class="mt16">
         <input id="signup-name" class="input" placeholder="Full name" required />
-        <input class="input mt8" type="email" placeholder="Email" required />
-        <input class="input mt8" type="password" placeholder="Password" required />
+        <input id="signup-email" class="input mt8" type="email" placeholder="Email" required />
+        <input id="signup-password" class="input mt8" type="password" placeholder="Password (min 8 chars)" minlength="8" required />
         <button class="btn mt12" type="submit">Join now</button>
       </form>
-      <p class="muted mt12">Already a member? <a href="login.html" style="color:#0a66c2">Sign in</a></p>
+      <p id="auth-message" class="auth-message mt12" aria-live="polite"></p>
+      <p class="muted mt12">Already a member? <a href="login.html" class="auth-link">Sign in</a></p>
     </section>
   </main>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
