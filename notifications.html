@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar"><div class="wrap"><a class="brand" href="index.html">BooterSpace</a><nav class="nav"><a href="index.html">Home</a><a href="network.html">My Network</a><a href="jobs.html">Jobs</a><a href="messaging.html">Messaging</a><a class="active" href="notifications.html">Notifications</a><a href="profile.html">Profile</a></nav></div></header>
+  <header class="topbar"><div class="wrap"><a class="brand" href="index.html">BooterSpace</a><nav class="nav"><a href="index.html">Home</a><a href="network.html">My Network</a><a href="jobs.html">Jobs</a><a href="messaging.html">Messaging</a><a class="active" href="notifications.html">Notifications</a><a href="profile.html">Profile</a><button id="logout-btn" class="btn secondary nav-btn" type="button">Log out</button></nav></div></header>
   <main class="page grid">
     <aside class="card profile-mini" id="mini-profile"></aside>
     <section class="card">
@@ -16,6 +16,8 @@
     </section>
     <aside class="card"><h3>Stay updated</h3><p class="muted mt12">Turn on alerts so you never miss an opportunity.</p></aside>
   </main>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
