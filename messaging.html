@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BooterSpace | Messaging</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar"><div class="wrap"><a class="brand" href="index.html">BooterSpace</a><nav class="nav"><a href="index.html">Home</a><a href="network.html">My Network</a><a href="jobs.html">Jobs</a><a class="active" href="messaging.html">Messaging</a><a href="notifications.html">Notifications</a><a href="profile.html">Profile</a></nav></div></header>
+  <main class="page grid">
+    <aside class="card profile-mini" id="mini-profile"></aside>
+    <section class="card">
+      <h2>Direct messages</h2>
+      <form id="message-form" class="mt12">
+        <input id="message-to" class="input" placeholder="To" />
+        <textarea id="message-text" class="mt8" placeholder="Write a message"></textarea>
+        <button class="btn mt12" type="submit">Send</button>
+      </form>
+      <div id="message-list" class="list mt16"></div>
+    </section>
+    <aside class="card"><h3>Messaging tools</h3><p class="muted mt12">Use concise and professional language for outreach.</p></aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
