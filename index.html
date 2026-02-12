@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BooterSpace | Feed</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html">BooterSpace</a>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="network.html">My Network</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="messaging.html">Messaging</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page grid">
+    <aside class="card profile-mini" id="mini-profile"></aside>
+
+    <section class="card">
+      <h2>Start a post</h2>
+      <form id="post-form" class="mt12">
+        <textarea id="post-text" placeholder="Share an update with your network"></textarea>
+        <button class="btn mt12" type="submit">Post</button>
+      </form>
+      <div id="feed-list"></div>
+    </section>
+
+    <aside class="card">
+      <h3>Trending Topics</h3>
+      <div class="list mt12">
+        <div class="list-item">#HiringNow <span class="badge">2,431 posts</span></div>
+        <div class="list-item">#DesignSystems <span class="badge">1,140 posts</span></div>
+        <div class="list-item">#AIProductivity <span class="badge">876 posts</span></div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

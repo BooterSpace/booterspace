@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BooterSpace | Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar"><div class="wrap"><a class="brand" href="index.html">BooterSpace</a><nav class="nav"><a href="index.html">Home</a><a href="network.html">My Network</a><a href="jobs.html">Jobs</a><a href="messaging.html">Messaging</a><a href="notifications.html">Notifications</a><a class="active" href="profile.html">Profile</a></nav></div></header>
+  <main class="page grid">
+    <aside class="card profile-mini" id="mini-profile"></aside>
+    <section class="card">
+      <h2>My profile</h2>
+      <div id="profile-view" class="mt12"></div>
+      <h3 class="mt16">Edit profile</h3>
+      <form id="profile-form" class="mt12">
+        <input name="name" class="input" placeholder="Full name" />
+        <input name="title" class="input mt8" placeholder="Professional headline" />
+        <textarea name="about" class="mt8" placeholder="About"></textarea>
+        <button class="btn success mt12" type="submit">Save profile</button>
+      </form>
+    </section>
+    <aside class="card"><h3>Profile strength</h3><p class="muted mt12">Add your projects and achievements to stand out.</p></aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
